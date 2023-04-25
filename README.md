@@ -1,28 +1,31 @@
-TRACK-IT
+#TRACK-IT
+
+
+![Alt text](img/accueil.PNG)
 
 Track-It est un projet IoT innovant qui vise à améliorer la sécurité routière en surveillant la vitesse des bus en temps réel, en les géolocalisant et en permettant l'arrêt à distance de leur moteur en cas de besoin.
 
 Ce projet a été conçu pour répondre à un besoin urgent de contrôle de la vitesse, étant donné que 30% des accidents de la route sont causés par un excès de vitesse ay Cameroun selon ce rapport https://tinyurl.com/3vxxkhp2. En mettant en œuvre ce système de suivi, nous espérons réduire le nombre d'accidents et encourager les conducteurs à adopter une conduite plus responsable.
 
-Fonctionnalités :
+##Fonctionnalités :
     - Surveiller la vitesse des bus en temps réel 
     - Géolocaliser les bus en temps réel 
     - Permettre l'arrêt à distance du moteur des bus en cas de besoin 
     - Enregistrer les événements de collision et les alerter en temps réel 
     - Analyser les données de conduite pour améliorer la sécurité routière
 
-Connectivité :
+##Connectivité :
     - Wifi uniquement
     - Création d'un point d'accès Wi-Fi : Track-It peut créer un point d'accès Wi-Fi pour configurer les paramètres de connexion au réseau Wi-Fi.
     - Stockage des informations de connexion : Les informations de connexion au réseau Wi-Fi sont stockées dans la mémoire de l'appareil pour être récupérées automatiquement lors du prochain démarrage.
     - Interface Web : Track-It fournit une interface Web simple pour configurer les paramètres de connexion au réseau Wi-Fi.
     - Détection automatique du réseau :  peut détecter automatiquement les réseaux Wi-Fi disponibles et les afficher dans l'interface Web pour faciliter la sélection du réseau.
 
-Securité :
+##Securité :
     - Sécurité avec Mosquitto : authentification des clients avec username, password et client ID
     - Sécurité avec Node-RED : authentification des utilisateurs pour l'accès au système
 
-Technologies utilisées : 
+##Technologies utilisées : 
     - Ubuntu Server sur Raspberry Pi 4 pour le système d'exploitation 
     - Django pour le développement de l'application web et la création de l'API 
     - PostgreSQL comme serveur de base de données 
@@ -37,35 +40,33 @@ Enfin, nous avons utilisé Fritzing pour le montage du circuit électronique, af
 
 Le projet Track-It utilise la bibliothèque WiFiManager pour permettre une configuration facile du Wi-Fi. Cette bibliothèque fournit une interface web permettant aux utilisateurs de se connecter facilement à un réseau Wi-Fi en entrant simplement le nom du réseau et le mot de passe. De plus, WiFiManager permet de stocker les informations de connexion Wi-Fi dans la mémoire de l'appareil pour une connexion automatique lors de l'allumage. 
 
-Équipe :
+##Équipe :
     - Yvan Tankeu  développeur Junior, responsable de projet.
     - Honvo Christophe  Enseignant IoT,
 
 Nous sommes fiers de contribuer à la sécurité routière et espérons que notre projet sera utile pour réduire le nombre d'accidents de la route causés par un excès de vitesse.
 
-Accueil solution web 
-![Alt text](img/accueil.PNG)
 
-Control moteur et visualition vitesse bus
+##Control moteur et visualition vitesse bus
 ![Alt text](img/menu_control.PNG)
 
-Payload Json des données captées et envoyées au broker MQTT
+##Payload Json des données captées et envoyées au broker MQTT
 ![Alt text](img/monitteur_serie.PNG)
 
-Flow traitement des données entrants
+##Flow traitement des données entrants
 ![Alt text](img/flow_data.PNG)
 
-API - End points disponible
+##API - End points disponible
 ![Alt text](img/end_points.PNG)
 
-API - End point d'un event de collision
+##API - End point d'un event de collision
 ![Alt text](img/collision.PNG)
 
-Schema base de données
+##Schema base de données
 ![Alt text](img/erd_bd.PNG)
 
-Table données GPS
+##Table données GPS
 ![Alt text](img/gps_data.PNG)
 
-Evolution projet
+##Evolution projet
 ![Alt text](img/projet_evolution.PNG)
